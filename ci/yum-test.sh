@@ -60,5 +60,5 @@ if [ $USE_SCL -eq 1 ]; then
     export MANPATH=
     cd /capng && source /opt/rh/rh-ruby26/enable && gem install bundler --no-document && bundle install && bundle exec rake
 else
-    cd /capng && gem install bundler --no-document && bundle install && bundle exec rake
+    cd /capng && gem install bundler -v 2.4.22 --no-document && bundle install && bundle exec rake
 fi
